@@ -18,8 +18,8 @@
 
 import os
 
-from wpcorpus.config import BASE_PATH
-DUMP_FILE = "enwiki-20121201-pages-articles.xml"
+from config import BASE_PATH
+DUMP_FILE = "enwiki-20170820-pages-articles.xml"
 CHUNK_SIZE = 64000000
 STEP_SIZE = 1024
 START = "<mediawiki>"
