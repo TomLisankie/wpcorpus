@@ -39,7 +39,7 @@ def main():
             fout.write(rest)
             rest = None
 
-        for i in range(0, CHUNK_SIZE / STEP_SIZE):
+        for i in range(0, int(CHUNK_SIZE / STEP_SIZE)):
             buf = fin.read(STEP_SIZE)
             if buf and len(buf) > 0:
                 fout.write(buf)
