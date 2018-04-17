@@ -51,7 +51,7 @@ class CategorizedWikiCorpusReader(object):
         rows = []
         for cat in cats:
 
-            print "training %s as %s" % (cat, categories[0])
+            print("training %s as %s" % (cat, categories[0]))
 
             sk = 'cat == "%s"' % cat
             for r in self.table.where(sk):

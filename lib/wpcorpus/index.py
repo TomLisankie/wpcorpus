@@ -62,7 +62,7 @@ class Index(object):
         if type(msg) == tuple:
             cat, filename, start, end = msg
 
-            print cat
+            print(cat)
 
             for c in cat:
                 self.entry['cat'] = c.encode('ascii', "ignore")
@@ -70,7 +70,7 @@ class Index(object):
                 self.entry['start'] = start
                 self.entry['length'] = end
                 self.entry.append()
-                print c
+                print(c)
         else:
             self.h5.close()
             self.open_ix()

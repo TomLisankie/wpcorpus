@@ -16,7 +16,7 @@ cd lib/wpcorpus
 for f in ../../dump/chunk/*.xml
   do
     echo "Processing $f file.."
-    python process.py $f $count &
+    python3 process.py $f $count &
 
     if [ $((count % PAR)) == 0 ]; then
         echo "waiting for results..."

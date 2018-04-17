@@ -8,5 +8,5 @@ cd ../
 rm -rf ./corpus/ix
 mkdir -p ./corpus/ix
 cd lib/wpcorpus
-python index.py
+python3 index.py
 
